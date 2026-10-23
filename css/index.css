@@ -1230,6 +1230,11 @@ footer p a::after {
 #ourChefs .item {
     width: 95%;
     margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
 }
 
 #ourChefs .item .image {
@@ -1327,6 +1332,9 @@ footer p a::after {
     transition-duration: 0.5s;
 }
 
+#ourChefs .content {
+    width: 85%;
+}
 
 #ourChefs .content h5 {
     font-size: 30px;
@@ -1342,7 +1350,7 @@ footer p a::after {
 #ourChefs .content p.text {
     color: #979797;
     font-size: 14px;
-    width: 80%;
+    width: 90%;
 
 }
 
