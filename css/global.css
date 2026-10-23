@@ -133,6 +133,6 @@ i {
     cursor: pointer;
 }
 
-input {
+input,textarea {
     color: var(--main-color) !important;
 }
