@@ -133,6 +133,6 @@ i {
     cursor: pointer;
 }
 
-form input {
+input {
     color: var(--main-color) !important;
 }
