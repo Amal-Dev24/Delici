@@ -343,11 +343,13 @@ function resetForm() {
     form.reset();
     formInputs.forEach(function (input) {
         input.classList.remove("is-valid");
+        input.classList.remove("is-invalid");
     });
 
     formPopupBook.reset();
     formPopupBookInputs.forEach(function (input) {
         input.classList.remove("is-valid");
+        input.classList.remove("is-invalid");
     });
 
 }
