@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 10px;
+    width: 12px;
+}
+
+:root {
+    --main-color: #E3C590;
+}
+
+body {
+    height: 600px;
+}
+
+section {
+    padding-block: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: "Forum", serif;
+}
+
+.title h6 {
+    color: var(--main-color);
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.title .image {
+    width: 100px;
+
+}
+
+.buttonMain {
+    border: 2px solid var(--main-color);
+    background-color: transparent;
+    padding-inline: 30px;
+    padding-block: 10px;
+    border-radius: 10px;
+
+}
+
+.AM-carousel-item button::after,
+.AM-carousel-item button::before,
+section#ourStory .box .item .content button::after,
+section#ourStory .box .item .content button::before,
+section#specialDish .box1 .item .content button::after,
+section#specialDish .box1 .item .content button::before,
+form button::before,
+form button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    left: 0;
+    transition-duration: 1s;
+
+}
+
+.AM-carousel-item button::before,
+section#ourStory .box .item .content button::before,
+section#specialDish .box1 .item .content button::before,
+form button::before {
+    top: 0;
+    transform: translateY(-100%);
+}
+
+.AM-carousel-item button::after,
+section#ourStory .box .item .content button::after,
+section#specialDish .box1 .item .content button::after,
+form button::after {
+    top: 0;
+    transform: translateY(100%);
+}
+
+.AM-carousel-item button:hover::before,
+.AM-carousel-item button:hover::after,
+section#ourStory .box .item .content button:hover::after,
+section#ourStory .box .item .content button:hover::before,
+section#specialDish .box1 .item .content button:hover::after,
+section#specialDish .box1 .item .content button:hover::before,
+form button:hover::before,
+form button:hover::after {
+    transform: translateY(0%);
+}
+
+.AM-carousel-item button span,
+section#ourStory .box .item .content button span,
+section#specialDish .box1 .item .content button span,
+form button span {
+    position: relative;
+    color: var(--main-color);
+    z-index: 1;
+    transition-duration: 1s;
+}
+
+.AM-carousel-item button:hover span,
+section#ourStory .box .item .content button:hover span,
+section#specialDish .box1 .item .content button:hover span,
+form button:hover span {
+    color: #000;
+}
+
+.custom-design-tooltip .tooltip-inner {
+    background-color: var(--main-color);
+    color: #000;
+}
+
+i {
+    cursor: pointer;
+}
+
+form input {
+    color: var(--main-color) !important;
+}
